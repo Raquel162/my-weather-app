@@ -16,6 +16,7 @@ document.querySelector("#current-day").innerHTML = day;
 
 function showTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
+  let temperature = Math.round(response.data.main.temp);
   document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
   );

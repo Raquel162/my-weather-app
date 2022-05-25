@@ -1,13 +1,13 @@
 .body {
-  background-color: #f8fcfb;
+  background-color: #b1dae75e;
   margin-top: 50px;
 }
 .weather-app {
   display: block;
   text-align: center;
-  background: #f8fcfb;
+  background: #b1dae723;
   margin: 25px auto;
-  border: 1.5px solid #6892d5;
+  border: 2px solid #6892d5;
   border-radius: 10px;
   max-width: 600px;
 }
@@ -75,4 +75,8 @@ input[type="submit"] {
   border-radius: 5px;
   border: 2px solid #6892d5;
   box-shadow: #79d1c3;
+}
+.foot {
+  text-align: center;
+  font-size: small;
 }
