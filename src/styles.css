@@ -76,6 +76,18 @@ input[type="submit"] {
   border: 2px solid #6892d5;
   box-shadow: #79d1c3;
 }
+.weather-forecast {
+  margin: 20px;
+  text-align: center;
+  font-size: small;
+}
+.weekday {
+  font-weight: bold;
+  color: #6892d5;
+}
+.min-temp-forecast {
+  color: #899290;
+}
 .foot {
   text-align: center;
   font-size: small;
