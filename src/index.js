@@ -49,6 +49,41 @@ function showTemperature(response) {
   let cel = document.querySelector("#cel");
   cel.addEventListener("click", changeToCel);
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = [
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `          
+            <div class="col-2">
+              <li class="weekday">${day}</li>
+              <br />
+              <li>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="cloudy"
+                  class="sky-img"
+                  id="icon"
+                />
+              </li>
+              <li class="temp-forecast">
+                <span class="max-temp-forecast">28ºC </span>
+                <span class="min-temp-forecast">18ºC</span>
+              </li>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function searchCity(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
@@ -78,3 +113,4 @@ let button = document.querySelector("#current-location");
 button.addEventListener("click", showCurrentLocation);
 
 searchCity("Madrid");
+displayForecast();
