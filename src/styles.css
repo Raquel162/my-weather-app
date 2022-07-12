@@ -23,6 +23,11 @@
 }
 .sky-img {
   margin-top: -25px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.temp-forecast {
+  margin-top: -15px;
 }
 .temperature-line {
   margin-bottom: 10px;
