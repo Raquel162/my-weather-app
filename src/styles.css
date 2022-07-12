@@ -26,6 +26,11 @@
   margin-left: -15px;
   margin-right: -15px;
 }
+.next-weekdays {
+  margin-bottom: -10px;
+  font-weight: bold;
+  color: #6892d5;
+}
 .temp-forecast {
   margin-top: -15px;
 }

@@ -1,6 +1,12 @@
 let now = new Date();
 let hours = now.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
 let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 let days = [
   "Sunday",
   "Monday",
@@ -81,7 +87,7 @@ function displayForecast(response) {
       forecastHTML +
       `          
             <div class="col-2">
-              <div class="weekday">${formatDay(forecastDay.dt)}</div>
+              <div class="next-weekdays">${formatDay(forecastDay.dt)}</div>
               <br />
               <div>
                 <img
